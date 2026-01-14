@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LVL Audition</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button id="auditionBtn" class="side-btn">Audition</button>
+
+  <main class="container">
+    <header><h1>LVL Audition</h1></header>
+    <p>Black & White audition site.</p>
+  </main>
+
+  <!-- Modal -->
+  <div id="auditionModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">×</button>
+      <h2>Audition 신청</h2>
+      <form id="auditionForm">
+        <label>이름<br><input name="name" required></label>
+        <label>가상 나이<br><input name="age" required></label>
+        <label>작사본<br><textarea name="lyrics" rows="5" required></textarea></label>
+        <label>눈사람 링크<br><input name="snowman" placeholder="https://..." ></label>
+        <button type="submit">전송</button>
+      </form>
+      <div id="submitMsg" class="msg"></div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="admin.html">Admin login</a>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
